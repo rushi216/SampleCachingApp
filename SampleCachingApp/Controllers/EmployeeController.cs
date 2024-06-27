@@ -40,7 +40,7 @@ namespace SampleCachingApp.Controllers
 
                 _cache.Set("employee", employees, new MemoryCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(30)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromHours(24)
                 });
 
                 return Ok(employees);
